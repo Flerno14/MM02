@@ -15,10 +15,6 @@ public class Venda {
         this.cliente = cliente;
     }
 
-    public void adicionarItem(ItemVenda item) {
-        itens.add(item);
-    }
-
     public double calcularTotal() {
         return itens.stream().mapToDouble(ItemVenda::getSubtotal).sum();
     }
