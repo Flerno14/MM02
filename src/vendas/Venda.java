@@ -1,9 +1,7 @@
 package vendas;
 
 import clientes.Cliente;
-
 import java.util.ArrayList;
-
 import java.util.List;
 
 public class Venda {
@@ -28,7 +26,11 @@ public class Venda {
         return cliente;
     }
 
-    public List<ItemVenda> getItens() {
+    public java.util.List<ItemVenda> getItens() {
         return itens;
+    }
+
+    public void adicionarItem(ItemVenda item) {
+        itens.add(item);
     }
 }
