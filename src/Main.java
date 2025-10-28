@@ -8,7 +8,6 @@ import java.time.format.DateTimeFormatter;
 public class Main {
 
     public static void main(String[] args) {
-        // Serviços do sistema
         ProdutoService produtoService = new ProdutoService();
         ClienteService clienteService = new ClienteService();
         VendaService vendaService = new VendaService();
@@ -40,24 +39,29 @@ public class Main {
         // ------------------------------
         // CRIAÇÃO DE UMA VENDA
         // ------------------------------
-        // Cliente escolhido para o exemplo
-        Cliente clienteCompra = clientePJ; // pode trocar para clientePJ se quiser
+        Cliente clienteCompra = clientePJ;
 
-        // Nova venda para o cliente
         Venda venda = new Venda(clienteCompra);
-
-        // Adicionando itens à venda
-        venda.adicionarItem(new ItemVenda(arroz, 2));
+        venda.adicionarItem(new ItemVenda(arroz, 20));
         venda.adicionarItem(new ItemVenda(feijao, 3));
         venda.adicionarItem(new ItemVenda(cafe, 3));
         venda.adicionarItem(new ItemVenda(leite, 2));
 
-        vendaService.registrarVenda(venda);
+        // ------------------------------
+        // TENTATIVA DE REGISTRO E IMPRESSÃO
+        // ------------------------------
 
-        // ------------------------------
-        // IMPRESSÃO DA NOTA FISCAL
-        // ------------------------------
-        imprimirNotaFiscal(venda);
+        // Agora, 'registrarVenda' retorna true ou false
+        boolean vendaRegistradaComSucesso = vendaService.registrarVenda(venda);
+
+        // A impressão da nota só ocorre se a venda foi registrada
+        if (vendaRegistradaComSucesso) {
+            imprimirNotaFiscal(venda);
+        } else {
+            System.out.println("========================================");
+            System.out.println("Falha ao processar a venda. Nota fiscal não será emitida.");
+            System.out.println("========================================");
+        }
     }
 
     private static void imprimirNotaFiscal(Venda venda) {
@@ -98,7 +102,7 @@ public class Main {
         System.out.println("Estoque atual após a venda:");
         for (ItemVenda item : venda.getItens()) {
             System.out.printf("%-20s Estoque restante: %d%n",
-                    item.getProduto().getNome(), item.getProduto().getEstoque() -  item.getQuantidade());
+                    item.getProduto().getNome(), item.getProduto().getEstoque());
         }
 
         System.out.println("========================================");
