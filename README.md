@@ -1,4 +1,4 @@
-# Construção do código e métodos de alteração ao repositóorio
+# Construção do código e métodos de alteração ao repositório
 
 ## Estrutura do código
     src/
