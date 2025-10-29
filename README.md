@@ -1,4 +1,6 @@
 # Construção do código e métodos de alteração ao repositóorio
+
+## Estrutura do código
     src/
     ├── clientes/
     │      └── Categoria.java
