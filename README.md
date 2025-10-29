@@ -1,19 +1,19 @@
-src/ <br>
-├── clientes/<br>
-│      └── Categoria.java<br>
-│      └── Cliente.java<br>
-│      └── ClientePessoaFisica.java<br>
-│      └── ClientePessoaJuridica.java<br>
-│      └── ClienteService.java<br>
-├── produtos/<br>
-│      └── Produto.java<br>
-│      └── ProdutoService.java<br>
-├── vendas/<br>
-│      └── DescontoFidelidade.java<br>
-│      └── ItemVenda.java<br>
-│      └── Venda.java<br>
-│      └── VendaService.java<br>
-└── Main.java<br>
+    src/ <br>
+    ├── clientes/<br>
+    │      └── Categoria.java<br>
+    │      └── Cliente.java<br>
+    │      └── ClientePessoaFisica.java<br>
+    │      └── ClientePessoaJuridica.java<br>
+    │      └── ClienteService.java<br>
+    ├── produtos/<br>
+    │      └── Produto.java<br>
+    │      └── ProdutoService.java<br>
+    ├── vendas/<br>
+    │      └── DescontoFidelidade.java<br>
+    │      └── ItemVenda.java<br>
+    │      └── Venda.java<br>
+    │      └── VendaService.java<br>
+    └── Main.java<br>
 
 Diretório referente a avaliação Mão na Massa 02
 >Lembre de criar uma nova branch para cada nova funcionalidade ou correção de bug a partir da branch main
