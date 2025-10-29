@@ -18,6 +18,9 @@
     │      └── VendaService.java
     └── Main.java
 
+# Como rodar o código:
+
+
 ## Métodos de upar o código ao diretório referente a avaliação Mão na Massa 02
 >Lembre de criar uma nova branch para cada nova funcionalidade ou correção de bug a partir da branch main
 <br><br>
