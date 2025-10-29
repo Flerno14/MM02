@@ -1,5 +1,21 @@
-# Diretório referente a avaliação Mão na Massa 02
- - Falta criar uma limitação com aviso para os estoques
+src/
+├── clientes/
+│   └── Categoria.java
+│   └── Cliente.java
+│   └── ClientePessoaFisica.java
+│   └── ClientePessoaJuridica.java
+│   └── ClienteService.java
+├── produtos/
+│   └── Produto.java
+│   └── ProdutoService.java
+├── vendas/
+│   └── DescontoFidelidade.java
+│   └── ItemVenda.java
+│   └── Venda.java
+│   └── VendaService.java
+└── Main.java
+
+Diretório referente a avaliação Mão na Massa 02
 >Lembre de criar uma nova branch para cada nova funcionalidade ou correção de bug a partir da branch main
 <br><br>
 
