@@ -9,10 +9,10 @@ src/ <br>
 │      └── Produto.java<br>
 │      └── ProdutoService.java<br>
 ├── vendas/<br>
-│ <br> └── DescontoFidelidade.java<br>
-│ <br> └── ItemVenda.java<br>
-│ <br> └── Venda.java<br>
-│ <br> └── VendaService.java<br>
+│      └── DescontoFidelidade.java<br>
+│      └── ItemVenda.java<br>
+│      └── Venda.java<br>
+│      └── VendaService.java<br>
 └── Main.java<br>
 
 Diretório referente a avaliação Mão na Massa 02
