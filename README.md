@@ -18,7 +18,17 @@
     │      └── VendaService.java
     └── Main.java
 
-# Como rodar o código:
+## Como rodar o código:
+
+  1 - Vá em Main.java <br>
+  2 - Cadastre um novo cliente como pessoa física ou jurídica <br>
+  3 - Cadastre os produtos a serem vendidos na loja <br>
+  4 - Crie a venda <br>
+  5 - Rode o código Main.java <br>
+  6 - O código deve rodar normalmente e realizar a impressão com todas as informações necessárias <br>
+   - Segue um Exemplo:
+
+  <img width="350" height="481" alt="image" src="https://github.com/user-attachments/assets/8a31f9b6-c4ec-4806-9c71-dd0802e7a439" />
 
 
 ## Métodos de upar o código ao diretório referente a avaliação Mão na Massa 02
